@@ -1,0 +1,11 @@
+loginButton.setOnClickListener {
+    val authSuccessful: Boolean = viewModel.authenticate(
+            usernameEditText.text.toString(),
+            passwordEditText.text.toString()
+    )
+    if (authSuccessful) {
+        // Navigate to next screen
+    } else {
+        statusTextView.text = requireContext().getString(R.string.auth_failed)
+    }
+}
