@@ -1,0 +1,10 @@
+class LoginFragment : Fragment() {
+    private lateinit var statusTextView: TextView
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+            super.onViewCreated(view, savedInstanceState)
+
+            statusTextView = view.findViewById(R.id.status_text_view)
+            statusTextView.setText(R.string.auth_failed)
+    }
+}
