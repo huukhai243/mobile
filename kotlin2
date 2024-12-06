@@ -1,0 +1,18 @@
+class LoginFragment : Fragment() {
+
+    private lateinit var usernameEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var loginButton: Button
+    private lateinit var statusTextView: TextView
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        usernameEditText = view.findViewById(R.id.username_edit_text)
+        passwordEditText = view.findViewById(R.id.password_edit_text)
+        loginButton = view.findViewById(R.id.login_button)
+        statusTextView = view.findViewById(R.id.status_text_view)
+    }
+
+    ...
+}
